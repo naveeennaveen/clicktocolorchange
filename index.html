@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .container{
+        text-align: center;
+        text-transform: uppercase;
+        padding: 45px;
+        
+    }
+    .row{
+        padding: 25%;
+    }
+    .btn,.btn:hover{
+        border: 2px solid rgb(255, 255, 255);
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+      
+                <button type="button" class="btn btn-success" onclick="changecolor()">Change Color</button></div>
+        </div>
+    </div>
+    <script>
+        function changecolor(){
+            var r = Math.floor(Math.random() * 255);
+            var g = Math.floor(Math.random() * 255);
+            var b = Math.floor(Math.random() * 255);
+            var bgColor = "rgb(" + r + "," + g + "," + b + ")";
+            console.log(bgColor);
+            document.body.style.background = bgColor;
+        }
+        
+    </script>
+</body>
+</html>
